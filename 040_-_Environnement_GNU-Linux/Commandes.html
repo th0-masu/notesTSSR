@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Commandes</title>
+    
+	<meta name="generator" content="Zim 0.76.3 & the Ecodiv-responsive template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <script type='text/javascript' src="../_resources/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../_resources/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 1600px)" href="../_resources/style1.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 1600px) and (min-width:1000px)" href="../_resources/style2.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 999px) and (min-width:750px)" href="../_resources/style3.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="../_resources/style4.css" type="text/css">      
+</head>
+<body>    
+	<div class="wrapper">
+ 
+    <!--Collapsable menu-->    
+        <div id="taskbar" style="color:#3D6E0F; font-weight:500;">
+            <div id="menuicon">
+                <a href="#" class="toggler" style="color:#CE5C00; text-decoration:none; line-height: 2em;"><img src="../_resources/menu.png" height="19" alt="Menu"></a> 
+            </div>
+            <div id="list">
+                <div id="navigation">
+                    <!-- To add additional links above the navigation menu, replace the link below with your link and remove comment tags
+                    If you do, you may want to remove the extra line above the index -->
+                    <!-- <p style="padding-left:20px; margin-bottom:0px"><a href="http://yourURL.html">Home</a></p> -->
+                    <p></p>
+                    <ul>
+<li><a href="../000_-_Sommaire.html" title="000 - Sommaire" class="page">000 - Sommaire</a></li>
+<li><a href="../010_-_Outils_Collaboratifs.html" title="010 - Outils Collaboratifs" class="page">010 - Outils Collaboratifs</a></li>
+<li><a href="../020-Base_des_réseaux.html" title="020-Base des réseaux" class="page">020-Base des réseaux</a></li>
+<li><a href="../030-OutilsClientMicrosoft.html" title="030-OutilsClientMicrosoft" class="page">030-OutilsClientMicrosoft</a></li>
+<li><a href="../040_-_Environnement_GNU-Linux.html" title="040 - Environnement GNU-Linux" class="page">040 - Environnement GNU-Linux</a>
+<ul>
+<li><a href="./Affichage_des_fichiers.html" title="Affichage des fichiers" class="page">Affichage des fichiers</a></li>
+<li><a href="./Arborescence.html" title="Arborescence" class="page">Arborescence</a></li>
+<li><a href="./Autorisations_de_fichiers.html" title="Autorisations de fichiers" class="page">Autorisations de fichiers</a></li>
+<li><a href="./Caractères_Spéciaux.html" title="Caractères Spéciaux" class="page">Caractères Spéciaux</a></li>
+<li><b>Commandes</b>
+<ul>
+<li><a href="./Commandes/Format_date.html" title="Format date" class="page">Format date</a></li>
+<li><a href="./Commandes/Les_variables.html" title="Les variables" class="page">Les variables</a></li>
+</ul></li>
+<li><a href="./Connexion.html" title="Connexion" class="page">Connexion</a></li>
+<li><a href="./Edition_de_texte.html" title="Edition de texte" class="page">Edition de texte</a></li>
+<li><a href="./Expressions_régulières.html" title="Expressions régulières" class="page">Expressions régulières</a></li>
+<li><a href="./Historique.html" title="Historique" class="page">Historique</a></li>
+<li><a href="./Recherche.html" title="Recherche" class="page">Recherche</a></li>
+</ul></li>
+<li><a href="../050_-_Administration_Linux.html" title="050 - Administration Linux" class="page">050 - Administration Linux</a></li>
+<li><a href="../Ressources.html" title="Ressources" class="page">Ressources</a></li>
+</ul>
+
+                    <p></p>
+                    <!-- Warning message if java script is disabled -->
+                    <noscript>
+                        <div style="padding: 10px">
+                            <span style="color:#D48D8D"><p>Please note</p>
+                            <p>To hide the menu</p>
+                            <p>you need to enable</p>
+                            <p>Java script</p></span>
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+        <div id="block">
+            <div id="content">
+            
+                <!-- You may want to replace the image below (but you are welcome to use it if you like) -->
+                <img src="../_resources/header_1.png" width=100% alt="Header">
+                <br>
+                <h1>Commandes <a name='040 - Environnement GNU-Linux:Commandes'></a></h1>
+                
+                <p>
+Créée le lundi 28 avril 2025
+</p>
+
+<table>
+<thead><tr>
+  <th align="left">Commande</th>
+  <th align="left">Paramètres</th>
+  <th align="left">Rôle</th>
+  <th align="left">Notes</th>
+</tr></thead>
+<tr>
+  <td align="left">tty</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Selectionne un terminal ou voit sur lequel on est connecté</td>
+  <td align="left">tty : terminal / pts : terminal virtuel (session SSH par exemple)</td>
+</tr>
+<tr>
+  <td align="left">time</td>
+  <td align="left">&lt;cmd&gt;</td>
+  <td align="left">Affichage du temps d'execution d'un processus</td>
+  <td align="left">time ./trait_ventes.sh</td>
+</tr>
+<tr>
+  <td align="left">passwd</td>
+  <td align="left">[OPTIONS] [LOGIN]</td>
+  <td align="left">Changement de mot de passe</td>
+  <td align="left">Sans option, la commande passwd permet de modifier le mot de passe, si le login n'est pas fourni la commande se base sur l'utilisateur courant.</td>
+</tr>
+<tr>
+  <td align="left">!?</td>
+  <td align="left">fich</td>
+  <td align="left">Rappel de la dernière commande content une chaine</td>
+  <td align="left">Relance une commande contenant fich</td>
+</tr>
+<tr>
+  <td align="left">rm</td>
+  <td align="left">-r -i</td>
+  <td align="left">Supprime un fichier ou un dossier</td>
+  <td align="left">-r : Résursif , -i : confirmation de suppression</td>
+</tr>
+<tr>
+  <td align="left">cp</td>
+  <td align="left">&lt;SOURCE&gt; &lt;DESTINATION&gt;</td>
+  <td align="left">Copie de fichier</td>
+  <td align="left">-r : récursif (copie le dossier et tout son contenu)</td>
+</tr>
+<tr>
+  <td align="left">ls</td>
+  <td align="left">-l , -R, -a</td>
+  <td align="left">Lister les fichiers et dossiers du répertoire</td>
+  <td align="left">-R - Récursif</td>
+</tr>
+<tr>
+  <td align="left">pwd</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche le répertoire courant</td>
+  <td align="left">print working directory</td>
+</tr>
+<tr>
+  <td align="left">ln</td>
+  <td align="left">-s , &lt;source&gt; &lt;lien&gt;</td>
+  <td align="left">Créer des liens</td>
+  <td align="left">Lien physique ou lien symbolique</td>
+</tr>
+<tr>
+  <td align="left">id</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche l'user ID (uid), le group ID (gid)</td>
+  <td align="left">Les utilisateurs et groupes sont gérés avec des numéros. On peut demander un autre utilisateur (id user02)</td>
+</tr>
+<tr>
+  <td align="left">tail</td>
+  <td align="left">-f</td>
+  <td align="left">Affiche les dernières entrées d'un fichier</td>
+  <td align="left">-f affiche en continu, utile pour actualiser les dernières entrées d'un log par exemple</td>
+</tr>
+<tr>
+  <td align="left">date</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche la date du jour</td>
+  <td align="left">En contexte admin #, peut modifier la date</td>
+</tr>
+<tr>
+  <td align="left">wall</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche un message sur tous les shells utilisateurs actifs</td>
+  <td align="left">echo "message" | wall</td>
+</tr>
+<tr>
+  <td align="left">cd</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Se déplacer dans la hiérarchie de fichiers du système</td>
+  <td align="left">change directory</td>
+</tr>
+<tr>
+  <td align="left">kill</td>
+  <td align="left">[-signal] &lt;PID&gt;</td>
+  <td align="left">Termine un processus  PID : identification du processus à stopper</td>
+  <td align="left">15 Terminaison logicielle - 2 Interruption (^C) - 1 Fin de session - 9 Arrêt inconditionnel</td>
+</tr>
+<tr>
+  <td align="left">!</td>
+  <td align="left">128</td>
+  <td align="left">Relance une commande</td>
+  <td align="left">!com relance la précédente commande commençant par com, !27 relance la dernière commande numéro 27</td>
+</tr>
+<tr>
+  <td align="left">man</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche le manuel d'une commande</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-k "log"</td>
+  <td align="left">Rechercher une expression dans les titres des pages de man</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">*</td>
+  <td align="left">--help</td>
+  <td align="left">Sur n'importe quel commande, affiche un résumé de l'aide</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">set</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche toutes les variables</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">env</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche uniquement les variables d'environnement</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">history</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche l'historique des commandes tapées</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">logname</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche le nom d'utilisateur</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">who</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Information sur les utilisateurs connectés</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-H</td>
+  <td align="left">Heading, affichage de l’entête de colonnes.</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-q</td>
+  <td align="left">Liste abrégée avec les noms et le nombre d'utilisateurs.</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-T</td>
+  <td align="left">Indique par + ou – s'il est possible d'écrire sur le terminal.</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-u</td>
+  <td align="left">Informations complémentaires sur les différentes connexions.</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">who am i</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">N'affiche que les informations relatives à l'utilisateur</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">+ format</td>
+  <td align="left">Format de visualisation de la date, composé de texte et de différents paramètres identifiés par le caractère %</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">cal</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affiche le calendrier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">05 2021</td>
+  <td align="left">Affiche le calendrier d'une date spécifique, année etc</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">mkdir</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Créer un dossier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">touch</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Création de fichier vide</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">mv</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Déplace ou renomme un fichier ou un dossier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">cat</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Lire un fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">head</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Afficher les premières entrées d'un fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">wc</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Compte le nombre de caractères, de mots, de lignes... d'un fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">diff</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Liste la différence entre 2 fichiers</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">cat</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affichage de texte brut dans la console</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">more</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affichage du texte par page</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">less</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Pareil que MORE mais avec quelques fonctionnalités en plus</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">vi</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Lance VI ou VIM</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">/</td>
+  <td align="left">En mode commande, lance la recherche</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">:wq</td>
+  <td align="left">Sauvegarder et quitter</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">:q</td>
+  <td align="left">Sortie sans sauvegarde</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">!</td>
+  <td align="left">Force l'exit avec :q sans enregistrer</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">:nb</td>
+  <td align="left">:10 &gt; se déplace à la ligne 10</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">[nb]← [nb]↑ etc</td>
+  <td align="left">se déplace de nb vers la direction</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">gg ou :0</td>
+  <td align="left">Début du fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">G ou :$</td>
+  <td align="left">Fin du fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">:set number</td>
+  <td align="left">Affiche les lignes :set nonumber pour désactiver</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">:set relativenumber</td>
+  <td align="left">Affiche les lignes relatif à la ligne en cours :set norelativenumber pour désactiver</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">dd</td>
+  <td align="left">Supression de ligne</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">x ou X</td>
+  <td align="left">supression de caractères, [nb]x supprime nb caractères</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">[nb]y(wW)</td>
+  <td align="left">Copie nombres de mots à partir de la position</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">[nb]yy</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">ps</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Affichage des processus de l'utilisateur courant</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-fax</td>
+  <td align="left">Affiche les processus parents et enfants</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&amp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">Utilisé pour lancer une commande en arrière-plan</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">jobs</td>
+  <td align="left">-l</td>
+  <td align="left">Affiche les commandes en arrière plan. -l affiche les PID</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">tar</td>
+  <td align="left">-c(reate) -f(ile)&lt;destination.tar&gt; &lt;cible à archiver&gt;</td>
+  <td align="left">-t affiche le contenu sans extraire</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-x(extraction) -v(erbose) -f(ile) &lt;fichier à extraire&gt; -C(restauration) &lt;Dossier cible restauration&gt;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-c -z(active) la compression -v -f &lt;destination.tar.gz&gt; &lt;cible à archiver&gt;</td>
+  <td align="left">.tar.gz ou .tgz pour une archive compressée</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">-c -j(active compression bz2) -v -f &lt;destination .tar.bz2&gt; &lt;cible à archiver&gt;</td>
+  <td align="left">.bz2 un peu plus long mais meilleure compression</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">ln</td>
+  <td align="left">-s /chemin/fichier/source.txt  /chemin/fichier/destination.txt</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">tee</td>
+  <td align="left">-a(ppend) &lt;destination&gt;</td>
+  <td align="left">Redirige sur le flux vers la sortie standard et vers un fichier</td>
+  <td align="left">&nbsp;</td>
+</tr>
+<tr>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+  <td align="left">&nbsp;</td>
+</tr>
+</table>
+
+
+                <br>
+                <span class="backlinks">
+                </span>
+                
+                <!-- !! The script will center all images. If you prefer the default (images at left delete these three lines -->    
+                <script>
+                    $( "img" ).wrap( "<div class='imgcenter'></div>" );
+                </script>
+                
+                
+            
+                <div id='footer'>
+                    <p>Created with <a href='http://zim-wiki.org/'>Zim-wiki</a> & the <a href='https://github.com/ecodiv/Ecodiv-responsive'>Ecodiv-responsive template</a><p>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
