@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Gestion des paquets</title>
+    
+	<meta name="generator" content="Zim 0.76.3 & the Ecodiv-responsive template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <script type='text/javascript' src="../_resources/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../_resources/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 1600px)" href="../_resources/style1.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 1600px) and (min-width:1000px)" href="../_resources/style2.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 999px) and (min-width:750px)" href="../_resources/style3.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="../_resources/style4.css" type="text/css">      
+</head>
+<body>    
+	<div class="wrapper">
+ 
+    <!--Collapsable menu-->    
+        <div id="taskbar" style="color:#3D6E0F; font-weight:500;">
+            <div id="menuicon">
+                <a href="#" class="toggler" style="color:#CE5C00; text-decoration:none; line-height: 2em;"><img src="../_resources/menu.png" height="19" alt="Menu"></a> 
+            </div>
+            <div id="list">
+                <div id="navigation">
+                    <!-- To add additional links above the navigation menu, replace the link below with your link and remove comment tags
+                    If you do, you may want to remove the extra line above the index -->
+                    <!-- <p style="padding-left:20px; margin-bottom:0px"><a href="http://yourURL.html">Home</a></p> -->
+                    <p></p>
+                    <ul>
+<li><a href="../000_-_Sommaire.html" title="000 - Sommaire" class="page">000 - Sommaire</a></li>
+<li><a href="../010_-_Outils_Collaboratifs.html" title="010 - Outils Collaboratifs" class="page">010 - Outils Collaboratifs</a></li>
+<li><a href="../020-Base_des_réseaux.html" title="020-Base des réseaux" class="page">020-Base des réseaux</a></li>
+<li><a href="../030-OutilsClientMicrosoft.html" title="030-OutilsClientMicrosoft" class="page">030-OutilsClientMicrosoft</a></li>
+<li><a href="../040_-_Environnement_GNU-Linux.html" title="040 - Environnement GNU-Linux" class="page">040 - Environnement GNU-Linux</a></li>
+<li><a href="../050_-_Administration_Linux.html" title="050 - Administration Linux" class="page">050 - Administration Linux</a>
+<ul>
+<li><a href="./Analyse_du_système.html" title="Analyse du système" class="page">Analyse du système</a></li>
+<li><a href="./Commandes.html" title="Commandes" class="page">Commandes</a></li>
+<li><a href="./Droits_sur_les_fichiers_et_repertoires.html" title="Droits sur les fichiers et repertoires" class="page">Droits sur les fichiers et repertoires</a></li>
+<li><a href="./Espaces_de_stockage.html" title="Espaces de stockage" class="page">Espaces de stockage</a></li>
+<li><a href="./Eteindre_-_Redémarrer.html" title="Eteindre - Redémarrer" class="page">Eteindre - Redémarrer</a></li>
+<li><b>Gestion des paquets</b></li>
+<li><a href="./Gestion_des_utilisateurs_et_groupes.html" title="Gestion des utilisateurs et groupes" class="page">Gestion des utilisateurs et groupes</a></li>
+<li><a href="./Gestion_du_réseau.html" title="Gestion du réseau" class="page">Gestion du réseau</a></li>
+<li><a href="./GRUB.html" title="GRUB" class="page">GRUB</a></li>
+<li><a href="./Maintenance_au_démarrage.html" title="Maintenance au démarrage" class="page">Maintenance au démarrage</a></li>
+<li><a href="./Maintenance_du_système.html" title="Maintenance du système" class="page">Maintenance du système</a></li>
+<li><a href="./Planification_Systeme.html" title="Planification Systeme" class="page">Planification Systeme</a></li>
+<li><a href="./Systemd.html" title="Systemd" class="page">Systemd</a></li>
+</ul></li>
+<li><a href="../Ressources.html" title="Ressources" class="page">Ressources</a></li>
+</ul>
+
+                    <p></p>
+                    <!-- Warning message if java script is disabled -->
+                    <noscript>
+                        <div style="padding: 10px">
+                            <span style="color:#D48D8D"><p>Please note</p>
+                            <p>To hide the menu</p>
+                            <p>you need to enable</p>
+                            <p>Java script</p></span>
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+        <div id="block">
+            <div id="content">
+            
+                <!-- You may want to replace the image below (but you are welcome to use it if you like) -->
+                <img src="../_resources/header_1.png" width=100% alt="Header">
+                <br>
+                <h1>Gestion des paquets <a name='050 - Administration Linux:Gestion des paquets'></a></h1>
+                
+                <p>
+Créée le mercredi 07 mai 2025
+</p>
+
+<h3>Gestion des dépots :<a id="gestion-des-dépots-" class="h_anchor"></a></h3>
+
+<p>
+Les paquets logiciels, ainsi que leurs sources, sont disponibles sur Internet dans des dépôts (repository).<br>
+Lorsqu'une machine est installée, les dépôts officiels Debian sont automatiquement configurés, en fonction de la version installée, facilitant :
+</p>
+<ul style='padding-left: 30pt'>
+<li>La mise à jour de toute la distribution : la mise à jour pourra être une mise à jour de sécurité ou une mise à jour complète du système et de la totalité des paquets la composant ;</li>
+<li>L'installation de nouveaux paquets : il n'est pas nécessaire de chercher sur Internet un site de téléchargement pour l’installation des paquets, le gestionnaire de paquet s'en charge tout seul.</li>
+</ul>
+<p>
+Il est parfois utile de modifier la configuration des dépôts, en fonction de ses besoins. Par exemple, la configuration de nouveaux dépôts permet l'installation de logiciels non fournis par Debian.<br>
+Bien sûr, il est possible de télécharger et installer un logiciel indépendamment, mais l'ajout du dépôt contenant ce logiciel présente des avantages certains :
+</p>
+<ul style='padding-left: 30pt'>
+<li>Mises à jour : la mise à jour du logiciel sera automatiquement prise en charge ;</li>
+<li>Gestion des dépendances : si l'installation du logiciel requiert des bibliothèques non standard, celle-ci seront incluses dans le dépôt et automatiquement installées.</li>
+</ul>
+
+
+
+
+<p>
+<b>Le fichier /etc/apt/sources.list contient la configuration des dépôts.</b>
+</p>
+
+
+<p>
+<img src="./Gestion_des_paquets/pasted_image_250507-001.png">
+</p>
+
+
+
+
+<ul>
+<li>main : paquets Debian standard, ils sont tous libres ;</li>
+<li>contrib : ces paquets sont libres mais dépendants de paquets qui ne le sont pas (vlc avec mp3)</li>
+<li>non-free-firmware : firmwares et pilotes non libres (mp3 etc)</li>
+<li>non-free : logiciels non libres </li>
+</ul>
+
+<h4>fichier source.list de base :<a id="fichier-sourcelist-de-base-" class="h_anchor"></a></h4>
+
+<p>
+<b><tt>vim /etc/apt/sources.list</tt></b><br>
+<div style='padding-left: 30pt'>
+<b><tt>deb</tt> <a href="http://ftp.fr.debian.org/debian/" title="http://ftp.fr.debian.org/debian/" class="http"><tt>http://ftp.fr.debian.org/debian/</tt></a> <tt>bookworm main</tt></b><br>
+<b><tt>deb-src</tt> <a href="http://ftp.fr.debian.org/debian/" title="http://ftp.fr.debian.org/debian/" class="http"><tt>http://ftp.fr.debian.org/debian/</tt></a> <tt>bookworm main</tt></b>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+<b><tt>deb</tt> <a href="http://security.debian.org/debian-security" title="http://security.debian.org/debian-security" class="http"><tt>http://security.debian.org/debian-security</tt></a> <tt>bookworm-security main</tt></b><br>
+<b><tt>deb-src</tt> <a href="http://security.debian.org/debian-security" title="http://security.debian.org/debian-security" class="http"><tt>http://security.debian.org/debian-security</tt></a> <tt>bookworm-security main</tt></b>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+<b><tt>deb</tt> <a href="http://ftp.fr.debian.org/debian/" title="http://ftp.fr.debian.org/debian/" class="http"><tt>http://ftp.fr.debian.org/debian/</tt></a> <tt>bookworm-updates main</tt></b><br>
+<b><tt>deb-src</tt> <a href="http://ftp.fr.debian.org/debian/" title="http://ftp.fr.debian.org/debian/" class="http"><tt>http://ftp.fr.debian.org/debian/</tt></a> <tt>bookworm-updates main</tt></b>
+</div>
+</p>
+
+
+
+
+<h4>-Mettre à jour la base de données des paquets disponibles<a id="-mettre-à-jour-la-base-de-données-des-paquets-disponibles" class="h_anchor"></a></h4>
+<p>
+apt update
+</p>
+
+<h4>-Faire la mise à jour<a id="-faire-la-mise-à-jour" class="h_anchor"></a></h4>
+<p>
+apt upgrade<br>
+ou<br>
+apt full-upgrade
+</p>
+
+<h4>-Rechercher un paquet<a id="-rechercher-un-paquet" class="h_anchor"></a></h4>
+<p>
+apt search &lt;nom&gt;
+</p>
+
+<h4>-Installer un paquet<a id="-installer-un-paquet" class="h_anchor"></a></h4>
+<p>
+apt install paquet
+</p>
+
+<h4>-Désinstaller un paquet<a id="-désinstaller-un-paquet" class="h_anchor"></a></h4>
+<p>
+apt remove paquet
+</p>
+
+<h4>-Désintaller un paquet en supprimant les fichiers de configuration<a id="-désintaller-un-paquet-en-supprimant-les-fichiers-de-configuration" class="h_anchor"></a></h4>
+<p>
+apt purge paquet
+</p>
+
+<h4>- Nettoyer le dépôt local des fichiers téléchargés suite aux mises à jour et autres installations<a id="--nettoyer-le-dépôt-local-des-fichiers-téléchargés-suite-aux-mises-à-jour-et-autres-installations" class="h_anchor"></a></h4>
+<p>
+apt clean
+</p>
+
+<h4>- Chercher un paquet qui correspond à une expression rationnelle :<a id="--chercher-un-paquet-qui-correspond-à-une-expression-rationnelle-" class="h_anchor"></a></h4>
+<p>
+apt search lightning
+</p>
+
+<h4>- Obtenir des informations détaillées sur un paquet :<a id="--obtenir-des-informations-détaillées-sur-un-paquet-" class="h_anchor"></a></h4>
+<p>
+apt show paquet
+</p>
+
+
+
+                <br>
+                <span class="backlinks">
+                </span>
+                
+                <!-- !! The script will center all images. If you prefer the default (images at left delete these three lines -->    
+                <script>
+                    $( "img" ).wrap( "<div class='imgcenter'></div>" );
+                </script>
+                
+                
+            
+                <div id='footer'>
+                    <p>Created with <a href='http://zim-wiki.org/'>Zim-wiki</a> & the <a href='https://github.com/ecodiv/Ecodiv-responsive'>Ecodiv-responsive template</a><p>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
